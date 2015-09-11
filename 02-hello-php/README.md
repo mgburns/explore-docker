@@ -48,3 +48,5 @@ Docker maintains several ["official"](https://docs.docker.com/docker-hub/officia
 	# Monitor the logs while developing
 	docker logs -f phpapp-apache-dev
 	```
+
+**Next**: [Docker + WordPress](../03-docker-wordpress)
