@@ -16,3 +16,4 @@ Docker can be difficult for new comers to grasp. Fortunately there is a lot of g
 * [Glossary](https://docs.docker.com/reference/glossary/)
 * [Dockerfile Reference](https://docs.docker.com/reference/builder/)
 * [Dockerfile Best Practices](https://docs.docker.com/articles/dockerfile_best-practices/)
+* [How to Use the Official Docker WordPress Image](http://www.sitepoint.com/how-to-use-the-official-docker-wordpress-image/)
