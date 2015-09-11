@@ -15,8 +15,8 @@ What does the `hello-world` image look like? Let's take a look at the [Dockerfil
 	COPY hello /
 	CMD ["/hello"]
 
-The `FROM` directive informs Docker that this image is built on top of the `scratch` image. (A special "base image").
-The `COPY` directive asks Docker to copy the local `hello` executable into the container at the `/` (root) path.
-The `CMD` directive asks Docker to execute the newly available `/hello` command, which simply prints out a few lines of text to the terminal and exits.
+* The `FROM` directive informs Docker that this image is built on top of the `scratch` image. (A special "base image").
+* The `COPY` directive asks Docker to copy the local `hello` executable into the container at the `/` (root) path.
+* The `CMD` directive asks Docker to execute the newly available `/hello` command, which simply prints out a few lines of text to the terminal and exits.
 
 **Next**: [Hello, PHP!](../02-hello-php)
