@@ -1,5 +1,5 @@
 
-Let's try some more practical examples -- 
+Let's try some more practical examples -- using Docker to bootstrap PHP environments for development.
 
 1. Run an interactive PHP console using the official PHP 5.5 CLI image (https://hub.docker.com/_/php/)
 
