@@ -1,7 +1,7 @@
 
 Let's take a closer look at what happend when you ran the `docker run hello-world` command:
 
-1. It looked for an image called "hello-world". It will check locally first, and __pull__ it from the [Docker Hub](https://hub.docker.com) if it can't be found.
+1. It looked for an image called "hello-world". It will check locally first, and __pull__ it from the [Docker Hub](https://hub.docker.com/_/hello-world/) if it can't be found.
 2. It __built__ a new container from the image.
 3. It __ran__ the default command (`hello`)
 
