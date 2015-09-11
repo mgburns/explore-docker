@@ -1,4 +1,4 @@
-FROM php:5.6-apache
+FROM php:latest-apache
 
 COPY php.ini /usr/local/etc/php/
 COPY src/ /var/www/html/
