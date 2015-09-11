@@ -1,0 +1,13 @@
+---
+wp:
+  image: wordpress
+  links:
+    - wpdb:mysql
+  ports:
+    - 80:80
+
+wpdb:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: example
+
