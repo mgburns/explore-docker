@@ -19,4 +19,6 @@ What does the `hello-world` image look like? Let's take a look at the [Dockerfil
 * The `COPY` directive asks Docker to copy the local `hello` executable into the container at the `/` (root) path.
 * The `CMD` directive asks Docker to execute the newly available `/hello` command, which simply prints out a few lines of text to the terminal and exits.
 
+**Pro Tip:** You can run `docker rm <container ID>` to remove inactive containers and `docker rmi <image ID>` to remove images that don't have containers.
+
 **Next**: [Hello, PHP!](../02-hello-php)
