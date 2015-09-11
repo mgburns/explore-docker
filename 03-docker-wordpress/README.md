@@ -20,34 +20,28 @@ Finally, let's take a look at a more complex example -- a multi-container deploy
 	open http://`docker-machine ip default`
 	```
 
-4. Stop WordPress
+If all goes well you should see the WordPress install screen.
 
+**ProTip**: You can stop the WordPress containers by running `docker stop wp wpdb`, and start them again by running `docker start wpdb wp`.
+
+## With Docker Compose
+
+[Docker Compose](https://docs.docker.com/compose/) is a tool that orchestrates multi-container deployments.
+
+1. Create a `docker-compose.yml` file:
+
+	```yml
+	wp:
+	  image: wordpress
+	  links:
+	    - wpdb:mysql
+	  ports:
+	    - 80:80
+
+	wpdb:
+	  image: mysql
+	  environment:
+	    MYSQL_ROOT_PASSWORD: example
 	```
-	docker stop wp wpdb
-	```
 
-5. Start it again
-
-	```
-	docker start wpdb wp
-	```
-
-Alternatively, you can use [Docker Compose](https://docs.docker.com/compose/):
-
-In `docker-compose.yml`:
-
-```yml
-wp:
-  image: wordpress
-  links:
-    - db:mysql
-  ports:
-    - 80:80
-
-db:
-  image: mariadb
-  environment:
-    MYSQL_ROOT_PASSWORD: example
-```
-
-And then run `docker-compose up`.
+2. Run `docker-compose up` to bring up both containers.
