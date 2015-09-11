@@ -1,10 +1,10 @@
 
 # Introduction to Docker
 
-0. Setup
-1. Hello, Docker!
-2. Hello, PHP!
-3. Docker + WordPress
+0. [Setup](00-setup)
+1. [Hello, Docker!](01-hello-docker)
+2. [Hello, PHP!](02-hello-php)
+3. [Docker + WordPress](03-docker-wordpress)
 
 ## Where to go Next
 
