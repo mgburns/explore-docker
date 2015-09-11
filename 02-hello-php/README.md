@@ -42,11 +42,23 @@ Docker maintains several ["official"](https://docs.docker.com/docker-hub/officia
 	# Run for production
 	docker run -d -p 80:80 --name phpapp-apache-prod mgburns/phpapp-apache
 
+	# Open in your browser
+	open http://`docker-machine ip default`
+
+	# Stop the production instance
+	docker stop phpapp-apache-prod
+
 	# Run for local development
 	docker run -d -v "$PWD/src:/var/www/html" -p 80:80 --name phpapp-apache-dev mgburns/phpapp-apache
 
+	# Open in your browser
+	open http://`docker-machine ip default`
+
 	# Monitor the logs while developing
 	docker logs -f phpapp-apache-dev
+
+	# Stop the production instance
+	docker stop phpapp-apache-dev
 	```
 
 **Next**: [Docker + WordPress](../03-docker-wordpress)
